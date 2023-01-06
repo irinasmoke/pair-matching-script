@@ -69,17 +69,18 @@ def generate_pairs(names, disallowed_combinations):
 names = ['Joey', 'Laurel','Giselle',  'Jake', 'Ben', 'JP', 'Sara', 'Jessica', 'Irina', 'Jin']
 disallowed_combinations = [
     
-    #Prior Pairs, Do not repeat
+    #Prior pairs, do not repeat
     ('Ben', 'Jake'), 
+    ('Linzi', 'Irina'),
 
-    #Manager Conflicts
+    #Managers should not be paired with reports
     ('JP', 'Irina'),
     ('JP', 'Linzi'),
     ('JP', 'Ben'),
 
     #Level Conflicts
 
-      #Contractor/UXR I conflicts with Senior and Principal
+      #Contractor/UXR I should not be paired with Senior or Principal
       ('Joey', 'Wei'),
       ('Joey', 'Jake'),
       ('Joey', 'Ben'),
@@ -101,7 +102,7 @@ disallowed_combinations = [
       ('Jin', 'Sara'),
       ('Jin', 'Jessica'),
 
-      #Principal Conflicts with UXR II
+      #Principal should also not be paired with UXR II
       ('Jessica', 'Giselle'),
       ('Jessica', 'Irina'),
       ('Jessica', 'Linzi'),
